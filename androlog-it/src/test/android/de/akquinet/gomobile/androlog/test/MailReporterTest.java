@@ -31,8 +31,9 @@ import de.akquinet.android.androlog.reporter.MailReporter;
 
 public class MailReporterTest extends AndroidTestCase {
 
-
-    private File testContext;
+    private static final String TEST_EMAIL = "kovmarci86@gmail.com"; 
+    	//"clement.escoffier@gmail.com";
+	private File testContext;
 
     public void setUp() {
         try {
@@ -50,7 +51,7 @@ public class MailReporterTest extends AndroidTestCase {
             propsActive.setProperty(Constants.ANDROLOG_ACTIVE, "true");
             propsActive.setProperty(Constants.ANDROLOG_REPORT_ACTIVE, "true");
             propsActive.setProperty(Constants.ANDROLOG_REPORT_REPORTERS, "de.akquinet.android.androlog.reporter.MailReporter");
-            propsActive.setProperty(MailReporter.ANDROLOG_REPORTER_MAIL_ADDRESS, "clement.escoffier@gmail.com");
+            propsActive.setProperty(MailReporter.ANDROLOG_REPORTER_MAIL_ADDRESS, TEST_EMAIL);
 
             testContext = new File(Environment.getExternalStorageDirectory(),
                     getContext().getPackageName() + ".properties");

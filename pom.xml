@@ -35,6 +35,7 @@
   <modules>
     <module>androlog</module>
     <module>androlog-it</module>
+    <module>androlog-spring</module>
   </modules>
 
   <dependencies>

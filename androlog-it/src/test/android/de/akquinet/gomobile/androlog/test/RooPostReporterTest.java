@@ -29,10 +29,10 @@ import de.akquinet.android.androlog.Constants;
 import de.akquinet.android.androlog.Log;
 import de.akquinet.android.androlog.reporter.PostReporter;
 
-public class PostReporterTest extends AndroidTestCase {
+public class RooPostReporterTest extends AndroidTestCase {
 
 
-    public static final String URL = "http://localhost:8080/reportmanager/logreports";
+    public static final String URL = "http://192.168.1.13:8080/reportmanager/logreports";
     	
     	// "http://chameria.spree.de:9015/reports";
 
@@ -53,7 +53,7 @@ public class PostReporterTest extends AndroidTestCase {
             Properties propsActive = new Properties();
             propsActive.setProperty(Constants.ANDROLOG_ACTIVE, "true");
             propsActive.setProperty(Constants.ANDROLOG_REPORT_ACTIVE, "true");
-            propsActive.setProperty(Constants.ANDROLOG_REPORT_REPORTERS, "de.akquinet.android.androlog.reporter.PostReporter");
+            propsActive.setProperty(Constants.ANDROLOG_REPORT_REPORTERS, "de.akquinet.android.androlog.reporter.RooReporter");
             propsActive.setProperty(Constants.ANDROLOG_REPORT_EXCEPTION_HANDLER_PROPAGATION, "false");
 
             propsActive.setProperty(PostReporter.ANDROLOG_REPORTER_POST_URL, URL);

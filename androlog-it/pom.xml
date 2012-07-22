@@ -33,6 +33,11 @@
       <version>${project.version}</version>
     </dependency>
     <dependency>
+    	<groupId>de.akquinet.android.androlog</groupId>
+    	<artifactId>androlog-spring</artifactId>
+    	<version>${project.version}</version>
+    </dependency>
+    <dependency>
       <groupId>com.google.android</groupId>
       <artifactId>android-test</artifactId>
       <version>1.6_r2</version>
