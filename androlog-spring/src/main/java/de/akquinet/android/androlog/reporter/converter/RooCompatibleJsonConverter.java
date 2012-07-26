@@ -101,7 +101,7 @@ public class RooCompatibleJsonConverter implements ReportConverter {
 		device.put("model", Build.MODEL);
 		device.put("product", Build.PRODUCT);
 		device.put("buildType", Build.TYPE);
-		device.put("androidVersion", Build.VERSION.SDK_INT);
+		device.put("applicationVersion", Build.VERSION.SDK_INT);
 		reportJson.put("device", device);
 	}
 
